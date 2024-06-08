@@ -1,25 +1,17 @@
 #include <stdio.h>
-int mcd(int a, int b) {
-    int mcd = 1;
-    int i = 1;
-    
-    while (i <= a && i <= b) {
-        if (a % i == 0 && b % i == 0) {
-            mcd = i;
-            
-        }
-        i++;
-    }
-    return mcd;
-}
 
 int main (){
-    int num1, num2;
+    int num1, num2, i=1, mcd=1;
     printf("Ingrese el primer numero: ");
     scanf("%d",&num1);
     printf("Ingrese el segundo numero: ");
     scanf("%d",&num2);
-    
-    printf("El MCD de %d y %d es: %d\n", num1, num2, mcd(num1, num2));
+      while (i <= num1 && i <= num2) {
+        if (num1 % i == 0 && num2 % i == 0) {
+            mcd = i;
+        }
+        i++;
+    }
+    printf("El MCD de %d y %d es: %d\n", num1, num2, mcd);
     return 0;
 }
