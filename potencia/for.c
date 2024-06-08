@@ -1,4 +1,4 @@
-#include <stdalign.h>
+#include <stdio.h>
 int main() {
     int base, exponente;
     long long resultado = 1;
